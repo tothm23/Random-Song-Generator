@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-md">
+  <a href="" class="navbar-brand">
+    <img src="/logos/logo_light.ico" alt="Logo" />
+  </a>
+
+  <!-- toggler -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-center" id="collapse">
+    <ul class="navbar-nav">
+      <!-- switch text with toggle -->
+      <li class="nav-item ml-auto mr-auto">
+        <div class="nav-link d-flex align-items-center">
+          <span id="switch-text">Switch theme</span>
+          <i class="fa-solid fa-toggle-on" onclick="changeToggleButton()"></i>
+        </div>
+      </li>
+
+      <!-- search-bar-->
+      <li class="nav-item ml-auto mr-auto">
+        <div class="nav-link">
+          <form class="form-inline" action="" id="search-base">
+            <div class="input-group">
+              <input type="text" class="form-control" id="search-bar" onkeyup="search()" />
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search-button" onclick="search()">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- random button -->
+      <li class="nav-item ml-auto mr-auto">
+        <div class="nav-link" id="random">
+          <button class="btn" type="button" onclick="getRandomPerformer()">Get random</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
