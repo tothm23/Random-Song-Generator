@@ -119,3 +119,4 @@ function displayCharacters(characters) {
 }
 
 loadData();
+document.getElementById("myfooter").classList.remove("fixed-bottom")

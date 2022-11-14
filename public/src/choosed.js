@@ -1,1 +1,1 @@
-document.getElementById("myfooter").classList.add("fixed-bottom")
+document.getElementById("myfooter").classList.add("fixed-bottom");
