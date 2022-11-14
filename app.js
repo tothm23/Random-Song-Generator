@@ -4,7 +4,7 @@ const data = require("./public/data");
 //const printPerformer = require("./my_modules/randomPerformer");
 
 const randomNumber = require("./my_modules/randomNumber");
-const fs = require("fs")
+const fs = require("fs");
 let printPerformer = "";
 
 const app = express();
@@ -29,11 +29,13 @@ fs.readFile("./public/data.json", "utf8", (err, text) => {
     return;
   }
   const data = JSON.parse(text);
-  printPerformer = data[randomNumber(data.length)].full_name;
+  const ridx = randomNumber(data.length);
+  printPerformer = data[ridx].full_name;
+  displayAvatas = data[ridx].short_name;
 });
 
 app.get("/random", (req, res) => {
-  res.render("pages/random", { title: "Songgenerator", printPerformer: printPerformer });
+  res.render("pages/random", { title: "Songgenerator", printPerformer: printPerformer, displayAvatas: displayAvatas });
 });
 
 app.listen(PORT, () => {

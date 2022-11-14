@@ -129,11 +129,28 @@ nav {
   transition: 0.3s;
 }
 
+.performer {
+  display: none;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+
 .mycard:hover {
   cursor: pointer;
   box-shadow: 0 0 3vh aqua;
   background-color: aqua;
   color: black;
+}
+
+.mycard:hover .avatar {
+  display: none;
+}
+
+.mycard:hover .performer {
+  display: block;
 }
 
 /*** footer ***/

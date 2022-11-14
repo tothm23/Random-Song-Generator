@@ -113,12 +113,17 @@ async function loadData() {
 function displayCharacters(characters) {
   let txt = "";
   for (let i = 0; i < characters.length; i++) {
-    txt += `
-      <div class="col-xl-4 col-md-6 mt-4 card-base">
-        <div class="card mycard text-center justify-content-center">
-          <h2>${characters[i].full_name}</h2>
-        </div>
-      </div>`;
+    txt +=
+      `
+    <div class="col-xl-4 col-md-6 mt-4 card-base">
+      <div class="card mycard text-center justify-content-center">
+      <h2 class="performer">` + characters[i].full_name + `</h2>
+        <img src="img/avatars/` +
+      characters[i].short_name +
+      `.jpg" class="rounded-circle avatar mx-auto">
+      </div>
+    </div>
+    `;
   }
   document.getElementById("myrow").innerHTML = txt;
 }
