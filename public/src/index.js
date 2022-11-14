@@ -1,12 +1,3 @@
-/*
-const mycard = document.getElementsByClassName("mycard");
-for (let i = 0; i < mycard.length; i++) {
-  mycard[i].addEventListener("click", (event) => {
-    alert(mycard[i].innerText);
-  });
-}
-*/
-
 /**
  * Read the JSON file
  * @param {*} file
@@ -77,13 +68,12 @@ function getRandomPerformer() {
 */
 
 function getRandomPerformer() {
-  window.location.href = "http://127.0.0.1:8080/random";
+  window.location.href = "http://127.0.0.1:8080/choosed";
 }
 
 /**
  * performs the search
  */
-
 function search() {
   // the searched value
   const searched = document.getElementById("search-bar").value.toLowerCase();

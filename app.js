@@ -32,10 +32,11 @@ fs.readFile("./public/data.json", "utf8", (err, text) => {
   const ridx = randomNumber(data.length);
   printPerformer = data[ridx].full_name;
   displayAvatas = data[ridx].short_name;
+  song = data[ridx].song;
 });
 
-app.get("/random", (req, res) => {
-  res.render("pages/random", { title: "Songgenerator", printPerformer: printPerformer, displayAvatas: displayAvatas });
+app.get("/choosed", (req, res) => {
+  res.render("pages/choosed", { title: "Songgenerator", printPerformer: printPerformer, displayAvatas: displayAvatas, song: song });
 });
 
 app.listen(PORT, () => {
