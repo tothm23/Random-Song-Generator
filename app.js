@@ -1,11 +1,7 @@
 const express = require("express");
 //const expressLayouts = require("express-ejs-layouts");
 const data = require("./public/data");
-//const printPerformer = require("./my_modules/randomPerformer");
-
-const randomNumber = require("./my_modules/randomNumber");
-const fs = require("fs");
-let printPerformer = "";
+const printrandomPerformer = require("./my_modules/randomPerformer");
 
 const app = express();
 const PORT = 8080;
@@ -23,20 +19,8 @@ app.get("/", (req, res) => {
   res.render("pages/index", { title: "Songgenerator", performers: data });
 });
 
-fs.readFile("./public/data.json", "utf8", (err, text) => {
-  if (err) {
-    console.log("File read failed:", err);
-    return;
-  }
-  const data = JSON.parse(text);
-  const ridx = randomNumber(data.length);
-  printPerformer = data[ridx].full_name;
-  displayAvatas = data[ridx].short_name;
-  song = data[ridx].song;
-});
-
 app.get("/choosed", (req, res) => {
-  res.render("pages/choosed", { title: "Songgenerator", printPerformer: printPerformer, displayAvatas: displayAvatas, song: song });
+  res.render("pages/choosed", { title: "Songgenerator", printPerformer: printrandomPerformer[0], displayAvatas: printrandomPerformer[1], song: printrandomPerformer[2] });
 });
 
 app.listen(PORT, () => {

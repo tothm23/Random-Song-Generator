@@ -1,18 +1,16 @@
 const fs = require("fs");
 const randomNumber = require("./randomNumber");
-let performer = "";
 
-fs.readFile("./public/data.json", "utf8", (err, text) => {
-  if (err) {
-    console.log("File read failed:", err);
-    return;
-  }
-  const data = JSON.parse(text);
-  performer = data[randomNumber(data.length)].full_name;
-});
+// Using Synchronous method
+const rawData = fs.readFileSync("./public/data.json");
+const data = JSON.parse(rawData);
+
+let performer = []
+performer.push(data[randomNumber(data.length)].full_name);
+performer.push(data[randomNumber(data.length)].short_name);
+performer.push(data[randomNumber(data.length)].song);
 
 function printRandomPerformer() {
-  console.log(performer);
   return performer;
 }
 

@@ -107,7 +107,9 @@ function displayCharacters(characters) {
       `
     <div class="col-xl-4 col-md-6 mt-4 card-base">
       <div class="card mycard text-center justify-content-center">
-      <h2 class="performer">` + characters[i].full_name + `</h2>
+      <h2 class="performer">` +
+      characters[i].full_name +
+      `</h2>
         <img src="img/avatars/` +
       characters[i].short_name +
       `.jpg" class="rounded-circle avatar mx-auto">
@@ -116,7 +118,14 @@ function displayCharacters(characters) {
     `;
   }
   document.getElementById("myrow").innerHTML = txt;
+
+  const mycard = document.getElementsByClassName("mycard");
+  for (let i = 0; i < mycard.length; i++) {
+    mycard[i].addEventListener("click", () => {
+      alert(characters[i].full_name)
+    });
+  }
 }
 
 loadData();
-document.getElementById("myfooter").classList.remove("fixed-bottom")
+document.getElementById("myfooter").classList.remove("fixed-bottom");
