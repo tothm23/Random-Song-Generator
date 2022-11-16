@@ -1,5 +1,5 @@
 /**
- * return a random number
+ * return a random number based of the max
  * @param {*} max
  * @returns
  */

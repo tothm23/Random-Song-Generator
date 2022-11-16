@@ -13,18 +13,6 @@ function readJSON(file, callback) {
 }
 
 /**
- * Remove myrow element
- */
-function removeMyrow() {
-  try {
-    const myrow = document.getElementById("myrow");
-    myrow.remove();
-  } catch (error) {
-    console.log("This element was removed!");
-  }
-}
-
-/**
  * return a random number
  * @param {*} max
  * @returns
@@ -34,41 +22,11 @@ function getRandomNumber(max) {
 }
 
 /**
- * choose random performer
+ * Choose a random performer
  */
-/*
 function getRandomPerformer() {
-  removeMyrow();
-
-  let randomFullname = "";
-  readJSON("../data.json", (text) => {
-    const data = JSON.parse(text);
-    randomFullname = data[getRandomNumber(data.length)].full_name;
-
-    const mycontainer = document.getElementById("mycontainer");
-    const section = document.createElement("section");
-    section.setAttribute("class", "row mt-3 mb-5");
-    
-    mycontainer.append(section);
-
-    const cardbase = document.createElement("div");
-    cardbase.setAttribute("class", "col-xl-12 col-md-12 mt-4 card-base");
-
-    let card = document.createElement("div");
-    card.setAttribute("class", "card mycard text-center justify-content-center");
-
-    let h2 = document.createElement("h2");
-    h2.innerHTML = randomFullname;
-
-    section.append(cardbase);
-    cardbase.append(card);
-    card.append(h2);
-  });
-}
-*/
-
-function getRandomPerformer() {
-  window.location.href = "http://127.0.0.1:8080/choosed";
+  const randomPerformer = data[getRandomNumber(data.length)].short_name;
+  window.location.href = `http://127.0.0.1:8080/choosed?performer=${randomPerformer}`;
 }
 
 /**
@@ -122,7 +80,8 @@ function displayCharacters(characters) {
   const mycard = document.getElementsByClassName("mycard");
   for (let i = 0; i < mycard.length; i++) {
     mycard[i].addEventListener("click", () => {
-      alert(characters[i].full_name)
+      window.location.href = `http://127.0.0.1:8080/choosed?performer=${characters[i].short_name}`;
+      //window.location.href = "http://127.0.0.1:8080/choosed";
     });
   }
 }
