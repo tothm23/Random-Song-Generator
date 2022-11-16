@@ -21,6 +21,7 @@ function data(inputName) {
   performer.push(data[idx].full_name);
   performer.push(data[idx].short_name);
   performer.push(data[idx].song);
+  performer.push(data[idx].url);
 
   return performer;
 }

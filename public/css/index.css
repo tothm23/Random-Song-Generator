@@ -120,10 +120,6 @@ nav {
 }
 
 /*** mycontainer ***/
-#mycontainer {
-
-}
-
 #choosedPerformer {
   color: aqua;
 }
@@ -141,6 +137,11 @@ nav {
 
 .songs:hover {
   border-bottom: 3px solid aqua;
+}
+
+.songs > a {
+  text-decoration: none;
+  color: aqua;
 }
 
 .mycard {

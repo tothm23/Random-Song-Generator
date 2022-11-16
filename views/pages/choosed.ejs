@@ -7,11 +7,13 @@
     <%- include("../partials/nav.ejs") %>
 
     <div id="mycontainer" class="container">
-      <h1 id="choosedPerformer" class="text-center pt-5 pb-3"  ><%= printPerformer %></h1>
+      <h1 id="choosedPerformer" class="text-center pt-5 pb-3"><%= printPerformer %></h1>
 
       <div id="mylist" class="list-group">
         <% for (let i = 0; i < song.length; i++) { %>
-        <li class="list-group-item songs pb-3"><%= song[i] %></li>
+        <li class="list-group-item songs pb-3">
+          <a href="<%= url[i] %>"><%= song[i] %> </a>
+        </li>
         <%} %>
       </div>
     </div>

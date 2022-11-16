@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 
 app.get("/choosed", (req, res) => {
   let performerQuery = req.query["performer"];
-  res.render("pages/choosed", { title: "Songgenerator - Choosed performer", printPerformer: dataPerformer(performerQuery)[0], displayAvatas: dataPerformer(performerQuery)[1], song: dataPerformer(performerQuery)[2] });
+  res.render("pages/choosed", { title: "Songgenerator - Choosed performer", printPerformer: dataPerformer(performerQuery)[0], displayAvatas: dataPerformer(performerQuery)[1], song: dataPerformer(performerQuery)[2], url: dataPerformer(performerQuery)[3] });
 });
 
 app.listen(PORT, () => {
