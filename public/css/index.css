@@ -15,18 +15,22 @@ body {
 
 /*** navbar ***/
 
-nav {
-  height: 100px;
+.navbar {
   border-bottom: 3px solid aqua;
-
-  background-color: black;
 }
 
-.collapse {
-  width: 100%;
-  z-index: 3;
+.nav-link {
+  color: aqua;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  padding-top: 3px;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+}
 
-  background-color: black;
+.nav-link:hover {
+  color: aqua;
+  border-bottom: 3px solid aqua;
 }
 
 .navbar-brand > img {
@@ -45,6 +49,13 @@ nav {
   margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+}
+
+/*
 #switch-text {
   color: aqua;
   font-size: 18px;
@@ -118,7 +129,7 @@ nav {
   color: black;
   transition: 0.3s;
 }
-
+*/
 /*** mycontainer ***/
 #choosedPerformer {
   color: aqua;
