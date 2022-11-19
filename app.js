@@ -1,8 +1,8 @@
 const express = require("express");
 //const expressLayouts = require("express-ejs-layouts");
-const data = require("./public/data");
+
 //const printrandomPerformer = require("./my_modules/randomPerformer");
-const dataPerformer = require("./my_modules/performerIndex");
+const getRouters = require("./routers/get");
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -16,15 +16,7 @@ app.use("/logos", express.static(__dirname + "/public/logos"));
 app.set("view engine", "ejs");
 //app.set("layout", "./index");
 
-app.get("/", (req, res) => {
-  res.render("pages/index", { title: "Songgenerator - Main", performers: data });
-  //console.log(req.query["performer"]);
-});
-
-app.get("/choosed", (req, res) => {
-  let performerQuery = req.query["performer"];
-  res.render("pages/choosed", { title: "Songgenerator - Choosed performer", printPerformer: dataPerformer(performerQuery)[0], displayAvatas: dataPerformer(performerQuery)[1], song: dataPerformer(performerQuery)[2], url: dataPerformer(performerQuery)[3] });
-});
+app.use("/", getRouters);
 
 app.listen(PORT, () => {
   console.info(`songgenerator run on ${PORT}`);
