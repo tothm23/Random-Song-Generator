@@ -67,9 +67,10 @@ body {
   padding-left: 15px;
   color: aqua;
 }
+*/
 
 #search-base {
-  height: 50px;
+  margin: 0 0.5rem;
 }
 
 #search-bar {
@@ -107,6 +108,7 @@ body {
   color: white;
 }
 
+/*
 #random {
   margin-top: 5.5px;
 }

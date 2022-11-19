@@ -22,13 +22,22 @@
         <a class="nav-link" href="#">Main page</a>
       </li>
 
-      <!-- main-page -->
+      <!-- search -->
       <li class="nav-item ml-auto mr-auto">
-        <a class="nav-link" href="#">Search</a>
+        <form class="form-inline" action="" id="search-base">
+          <div class="input-group">
+            <input type="text" class="form-control" id="search-bar" onkeyup="search()" />
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="search-button" onclick="search()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+          </div>
+        </form>
       </li>
 
       <!-- random button -->
-      <li class="nav-item ml-auto mr-auto">
+      <li class="nav-item ml-auto mr-auto" onclick="getRandomPerformer()">
         <a class="nav-link" href="#">Random</a>
       </li>
 
