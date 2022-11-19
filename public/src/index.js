@@ -26,8 +26,8 @@ function getRandomNumber(max) {
  */
 function getRandomPerformer() {
   const randomPerformer = data[getRandomNumber(data.length)].short_name;
-  //window.location.href = `https://randomsonggenerator.herokuapp.com/choosed?performer=${randomPerformer}`;
-  window.location.href = `http://127.0.0.1:8080/choosed?performer=${randomPerformer}`;
+  window.location.href = `https://randomsonggenerator.herokuapp.com/choosed?performer=${randomPerformer}`;
+  //window.location.href = `http://127.0.0.1:8080/choosed?performer=${randomPerformer}`;
 }
 
 /**
@@ -81,8 +81,8 @@ function displayCharacters(characters) {
   const mycard = document.getElementsByClassName("mycard");
   for (let i = 0; i < mycard.length; i++) {
     mycard[i].addEventListener("click", () => {
-      //window.location.href = `https://randomsonggenerator.herokuapp.com/choosed?performer=${characters[i].short_name}`;
-      window.location.href = `http://127.0.0.1:8080/choosed?performer=${characters[i].short_name}`;
+      window.location.href = `https://randomsonggenerator.herokuapp.com/choosed?performer=${characters[i].short_name}`;
+      //window.location.href = `http://127.0.0.1:8080/choosed?performer=${characters[i].short_name}`;
     });
   }
 }
