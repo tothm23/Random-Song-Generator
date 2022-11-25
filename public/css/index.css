@@ -39,14 +39,14 @@ body {
 }
 
 .line:nth-child(1) {
-  margin-top: 15px;
+  margin-top: 7px;
 }
 
 .line {
-  width: 50px;
-  height: 5px;
+  width: 40px;
+  height: 4px;
   background-color: aqua;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
 @media (max-width: 768px) {
