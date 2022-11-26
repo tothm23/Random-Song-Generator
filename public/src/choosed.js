@@ -52,7 +52,15 @@ function displayCharacters(songs, urls) {
     </li>
     `;
   }
-  document.getElementById("song").innerHTML = txt; 
+  document.getElementById("song").innerHTML = txt;
+
+  const songElements = document.getElementsByClassName("songs");
+
+  for (let i = 0; i < songElements.length; i++) {
+    songElements[i].addEventListener("click", () => {
+      window.open(urls[i], "_blank");
+    });
+  }
 }
 
 loadData();
