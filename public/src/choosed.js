@@ -50,10 +50,9 @@ function displayCharacters(songs, urls) {
       songs[i] +
       `</a>
     </li>
-    </div>
     `;
   }
-  document.getElementById("song").innerHTML = txt;
+  document.getElementById("song").innerHTML = txt; 
 }
 
 loadData();
