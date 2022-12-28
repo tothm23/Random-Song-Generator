@@ -7,16 +7,30 @@
   margin: 0;
   padding: 0;
 }
+/*** Text selection ***/
 
 ::-moz-selection {
-  /* Code for Firefox */
-  color: white;
+  color: white; /* Code for Firefox */
   background: black;
 }
 
 ::selection {
   color: white;
   background: black;
+}
+
+/*** Scrollbar ***/
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 10rem;
+}
+
+::-webkit-scrollbar-track {
+  background: black; /* track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: aqua; /* handle */
 }
 
 body {

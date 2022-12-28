@@ -1,3 +1,5 @@
+/*** Text selection ***/
+
 ::-moz-selection {
   /* Code for Firefox */
   color: black;
@@ -7,6 +9,20 @@
 ::selection {
   color: black;
   background: white;
+}
+
+/*** Scrollbar ***/
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 10rem;
+}
+
+::-webkit-scrollbar-track {
+  background: aqua; /* track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; /* handle */
 }
 
 body {
