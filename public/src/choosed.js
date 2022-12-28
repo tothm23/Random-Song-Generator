@@ -84,3 +84,27 @@ function performerIndex() {
 
   return fullNamesIndex;
 }
+
+/**
+ * Change the theme
+ */
+function darkTheme() {
+  let dark = document.getElementById("theme");
+  let logo = document.getElementById("logo");
+
+  const head = document.getElementsByTagName("head")[0];
+  let link = document.createElement("link");
+
+  if (dark.innerHTML === "Light theme") {
+    link.rel = "stylesheet";
+    link.href = "/css/light.css";
+    logo.setAttribute("src", "/logos/logo_dark.ico");
+    dark.innerHTML = "Dark theme";
+  } else {
+    link.rel = "stylesheet";
+    link.href = "/css/dark.css";
+    logo.setAttribute("src", "/logos/logo_light.ico");
+    dark.innerHTML = "Light theme";
+  }
+  head.appendChild(link);
+}
