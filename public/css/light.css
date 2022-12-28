@@ -1,3 +1,14 @@
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
 body {
   background-color: white;
 }
@@ -69,6 +80,17 @@ body {
   color: black;
 }
 
+.songs > a::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: aqua;
+}
+
+.songs > a::selection {
+  color: black;
+  background: aqua;
+}
+
 .mycard {
   background-color: aqua;
   border-color: black;
@@ -87,4 +109,15 @@ body {
   border-top-color: black;
   background-color: white;
   color: black;
+}
+
+#myfooter > p::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: aqua;
+}
+
+#myfooter > p::selection {
+  color: black;
+  background: aqua;
 }

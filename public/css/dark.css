@@ -1,3 +1,14 @@
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
 body {
   background-color: black;
 }
@@ -55,6 +66,7 @@ body {
 
 .list-group-item {
   background-color: black;
+  border-color: black;
 }
 
 .songs {
@@ -86,5 +98,16 @@ body {
 #myfooter {
   border-top-color: aqua;
   background-color: black;
+  color: white;
+}
+
+#myfooter > p::-moz-selection {
+  /* Code for Firefox */
   color: aqua;
+  background: black;
+}
+
+#myfooter > p::selection {
+  color: aqua;
+  background: black;
 }
