@@ -2,8 +2,9 @@
   {
     "short_name": "against",
     "full_name": "Against The Current",
-    "song": ["again&ampagain (feat. guardin) [OFFICIAL VIDEO]", "jump [OFFICIAL VIDEO]", "Talk (OFFICIAL VIDEO)", "that won't save us [PERFORMANCE VIDEO", "weapon [OFFICIAL VIDEO]"],
-    "url": ["https://www.youtube.com/watch?v=sURhALFOo6w&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=1", "https://www.youtube.com/watch?v=0rLL-1Rw_GE&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=2", "https://www.youtube.com/watch?v=AqQbZcKQCnE&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=3", "https://www.youtube.com/watch?v=PD8q6R-AiO4&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=4", "https://www.youtube.com/watch?v=W6FixoUyQQQ&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=5"]
+    "song": ["again&ampagain (feat. guardin) [OFFICIAL VIDEO]", "jump [OFFICIAL VIDEO]", "Talk (OFFICIAL VIDEO)", "that won't save us [PERFORMANCE VIDEO", "weapon [OFFICIAL VIDEO]", "Young & Relentless (Official Music Video)"],
+    "url": ["https://www.youtube.com/watch?v=sURhALFOo6w&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=1", "https://www.youtube.com/watch?v=0rLL-1Rw_GE&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=2", "https://www.youtube.com/watch?v=AqQbZcKQCnE&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=3", "https://www.youtube.com/watch?v=PD8q6R-AiO4&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=4", "https://www.youtube.com/watch?v=W6FixoUyQQQ&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=5",
+  "https://www.youtube.com/watch?v=GwF5KzrazXU&list=PLfbkAhEG0y74GugQFUK_ijqpNxDtpJi8C&index=6"]
   },
   {
     "short_name": "alan",
@@ -24,6 +25,12 @@
     "url": ["https://www.youtube.com/watch?v=mfJhMfOPWdE&list=PLfbkAhEG0y77M1bFqqnO1A7WnY7Cy_bk-&index=1", "https://www.youtube.com/watch?v=kivuDS-6HbQ&list=PLfbkAhEG0y77M1bFqqnO1A7WnY7Cy_bk-&index=2", "https://www.youtube.com/watch?v=ARR661NuqdA&list=PLfbkAhEG0y77M1bFqqnO1A7WnY7Cy_bk-&index=3", "https://www.youtube.com/watch?v=hg2ZDMhdI_8&list=PLfbkAhEG0y77M1bFqqnO1A7WnY7Cy_bk-&index=4"]
   },
   {
+    "short_name": "ava",
+    "full_name": "Ava Max",
+    "song":["Million Dollar Baby (Official Video)", "Alone, Pt. II (Live at Château de Fontainebleau)", "Kings & Queens [Official Music Video]", "Into Your Arms (Music Video)"],
+    "url": ["https://www.youtube.com/watch?v=WSX6ZRX4_-Q&list=PLfbkAhEG0y77PmshKFcd-ss0MFTQWguwM&index=1", "https://www.youtube.com/watch?v=WrHDquZ-tj0&list=PLfbkAhEG0y77PmshKFcd-ss0MFTQWguwM&index=2", "https://www.youtube.com/watch?v=jH1RNk8954Q&list=PLfbkAhEG0y77PmshKFcd-ss0MFTQWguwM&index=3", "https://www.youtube.com/watch?v=Bx-z87IWnyM&list=PLfbkAhEG0y77PmshKFcd-ss0MFTQWguwM&index=4"]
+  },
+  {
     "short_name": "black",
     "full_name": "Black Veil Brides",
     "song": ["Fallen Angels (Official Video)", "In The End (Official Video)", "Rebel Love Song (Explicit)", "Wake Up (Official Video)"],
@@ -40,6 +47,30 @@
     "full_name": "Bodybangers",
     "song": ["Europe ft. Victoria Kern, Nicco", "Pump Up The Jam (Club Remix)", "Gimme More (Official Video HD)", "No Limit (Official Video)", "Tonight (Official Video HD)", "I Like (Official Video HD)"],
     "url": ["https://www.youtube.com/watch?v=QoLiBooJGKg&list=PLfbkAhEG0y76cJ1veLDn0vdwPMRRszinI&index=1", "https://www.youtube.com/watch?v=N3mUsFplYcY&list=PLfbkAhEG0y76cJ1veLDn0vdwPMRRszinI&index=2", "https://www.youtube.com/watch?v=BH6onQjCT8o&list=PLfbkAhEG0y76cJ1veLDn0vdwPMRRszinI&index=3", "https://www.youtube.com/watch?v=1V2ZJMKe95s&list=PLfbkAhEG0y76cJ1veLDn0vdwPMRRszinI&index=4", "https://www.youtube.com/watch?v=V80jm1rs2UQ&list=PLfbkAhEG0y76cJ1veLDn0vdwPMRRszinI&index=5", "https://www.youtube.com/watch?v=f6PhFXTEihk&list=PLfbkAhEG0y76cJ1veLDn0vdwPMRRszinI&index=6"]
+  },
+  {
+    "short_name": "bring",
+    "full_name": "Bring Me The Horizon",
+    "song": ["Can You Feel My Heart", "Throne", "sTraNgeRs (Official Video)", "Avalanche (Official Video)", "Ed Sheeran - Bad Habits feat. Bring Me The Horizon (official audio)", "Obey with YUNGBLUD (Official Video)"],
+    "url": ["https://www.youtube.com/watch?v=QJJYpsA5tv8&list=PLfbkAhEG0y74uBfbza91fvP0ApdoY3sIM&index=1", "https://www.youtube.com/watch?v=Ow_qI_F2ZJI&list=PLfbkAhEG0y74uBfbza91fvP0ApdoY3sIM&index=2", "https://www.youtube.com/watch?v=FsNGxsrcZas&list=PLfbkAhEG0y74uBfbza91fvP0ApdoY3sIM&index=3", "https://www.youtube.com/watch?v=UNaYpBpRJOY&list=PLfbkAhEG0y74uBfbza91fvP0ApdoY3sIM&index=4", "https://www.youtube.com/watch?v=IxcxyGDD38E&list=PLfbkAhEG0y74uBfbza91fvP0ApdoY3sIM&index=5", "https://www.youtube.com/watch?v=AolstL1_MhE&list=PLfbkAhEG0y74uBfbza91fvP0ApdoY3sIM&index=6"]
+  },
+  {
+    "short_name": "david",
+    "full_name": "David Guetta",
+    "song": ["Snoop Dogg - 'Sweat' Snoop Dogg vs David Guetta (Remix) [Official Video]", "David Guetta ft Sia - Titanium (David Guetta & MORTEN Future Rave Remix) [Live Edit]", "David Guetta Feat. Akon - Sexy Chick (Official Video)", "David Guetta & Bebe Rexha - I'm Good (Blue) [Official Music Video]"],
+    "url": ["https://www.youtube.com/watch?v=KnEXrbAQyIo&list=PLfbkAhEG0y74FFMzLuHeJzIP9LEP8GE_i&index=1", "https://www.youtube.com/watch?v=S69w0zMW-A0&list=PLfbkAhEG0y74FFMzLuHeJzIP9LEP8GE_i&index=2", "https://www.youtube.com/watch?v=N9hazmsUxrM&list=PLfbkAhEG0y74FFMzLuHeJzIP9LEP8GE_i&index=3", "https://www.youtube.com/watch?v=90RLzVUuXe4&list=PLfbkAhEG0y74FFMzLuHeJzIP9LEP8GE_i&index=4"]
+  },
+  {
+    "short_name": "deorro",
+    "full_name": "Deorro",
+    "song": ["Deorro x Chris Brown - Five More Hours (Official Video)", "Deorro x MAKJ x Max Styler - Bring It Back (Bass Boosted)(HD)", "Deorro - Bootie In Your Face (Original Mix)", "R3HAB & DEORRO - Flashlight (Official Music Video)"],
+    "ur": ["https://www.youtube.com/watch?v=j3CaHeakZF4&list=PLfbkAhEG0y77MzSmtMM1iJEjrLhLyRGyY&index=1", "https://www.youtube.com/watch?v=3UGJZHXLeR4&list=PLfbkAhEG0y77MzSmtMM1iJEjrLhLyRGyY&index=2", "https://www.youtube.com/watch?v=YBYJgBWeeVk&list=PLfbkAhEG0y77MzSmtMM1iJEjrLhLyRGyY&index=3", "https://www.youtube.com/watch?v=XrMssQ2JB48&list=PLfbkAhEG0y77MzSmtMM1iJEjrLhLyRGyY&index=4"]
+  },
+  {
+    "short_name": "dimitri",
+    "full_name": "Dimitri Vegas",
+    "song": ["Dimitri Vegas, MOGUAI & Like Mike - Body Talk (Mammoth) ft. Julian Perretta (Official Music Video)", "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video)", "Dimitri Vegas & Like Mike vs Ummet Ozcan - The Hum (Official Music Video)", "Dimitri Vegas & Like Mike, Steve Aoki vs Ummet Ozcan - Melody", "Dimitri Vegas & Like Mike vs Hardwell - Unity (Official Music Video)"],
+    "url": ["https://www.youtube.com/watch?v=yldN7geOZfc&list=PLfbkAhEG0y76Esp32InkRlZY6W0u9_hj0&index=1", "https://www.youtube.com/watch?v=o7Oibcmr81Y&list=PLfbkAhEG0y76Esp32InkRlZY6W0u9_hj0&index=2", "https://www.youtube.com/watch?v=exJlapzPnlc&list=PLfbkAhEG0y76Esp32InkRlZY6W0u9_hj0&index=3", "https://www.youtube.com/watch?v=hvynkEbRgDc&list=PLfbkAhEG0y76Esp32InkRlZY6W0u9_hj0&index=4", "https://www.youtube.com/watch?v=rLlZE_G_fXo&list=PLfbkAhEG0y76Esp32InkRlZY6W0u9_hj0&index=5"]
   },
   {
     "short_name": "eminem",
@@ -74,8 +105,8 @@
   {
     "short_name": "inna",
     "full_name": "Inna",
-    "song": ["Cola Song _ Official Music Video", "Oh My God (Starix Remix)", "More Than Friends (Official Music Video)", "We Wanna (Summer Session)", "10 Minutes", "In Your Eyes Official Music Video", "Club Rocker (Official Video)", "Maza Official Video"],
-    "url": ["https://www.youtube.com/watch?v=Yz2658gzOuM&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=1", "https://www.youtube.com/watch?v=c3jkmzULtsA&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=2", "https://www.youtube.com/watch?v=NaEbWyb9bOA&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=3", "https://www.youtube.com/watch?v=MoXY07NHnXQ&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=4", "https://www.youtube.com/watch?v=cgyvrg6WNPc&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=5", "https://www.youtube.com/watch?v=Od-6uzcLGqw&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=6", "https://www.youtube.com/watch?v=WIOX32wh9_A&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=7", "https://www.youtube.com/watch?v=m_W5-0EY8Bk&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=8"]
+    "song": ["Cola Song _ Official Music Video", "Oh My God (Starix Remix)", "More Than Friends (Official Music Video)", "We Wanna (Summer Session)", "10 Minutes", "In Your Eyes Official Music Video", "Club Rocker (Official Video)", "Maza Official Video", "Crazy Sexy Wild | Official Music Video", "Flashbacks | Official Video", "Party Never Ends (Official Video)"], 
+    "url": ["https://www.youtube.com/watch?v=Yz2658gzOuM&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=1", "https://www.youtube.com/watch?v=c3jkmzULtsA&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=2", "https://www.youtube.com/watch?v=NaEbWyb9bOA&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=3", "https://www.youtube.com/watch?v=MoXY07NHnXQ&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=4", "https://www.youtube.com/watch?v=cgyvrg6WNPc&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=5", "https://www.youtube.com/watch?v=Od-6uzcLGqw&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=6", "https://www.youtube.com/watch?v=WIOX32wh9_A&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=7", "https://www.youtube.com/watch?v=m_W5-0EY8Bk&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=8", "https://www.youtube.com/watch?v=UCkkt2sBvKM&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=9", "https://www.youtube.com/watch?v=QYeElOeWz6M&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=10", "https://www.youtube.com/watch?v=4yffvW-QCfc&list=PLfbkAhEG0y75Ht6gJ3OS6PL1WKP82GeUl&index=11"]
   },
   {
     "short_name": "katy",
@@ -114,6 +145,12 @@
     "url": ["https://www.youtube.com/watch?v=USVg_E7r20g&list=PLfbkAhEG0y74T2FaqcKpBCpJNjPv7-FoD&index=1", "https://www.youtube.com/watch?v=mFkrlAnDgZM&list=PLfbkAhEG0y74T2FaqcKpBCpJNjPv7-FoD&index=2", "https://www.youtube.com/watch?v=zF2GGh_hWc0&list=PLfbkAhEG0y74T2FaqcKpBCpJNjPv7-FoD&index=3", "https://www.youtube.com/watch?v=i5getrSq6G8&list=PLfbkAhEG0y74T2FaqcKpBCpJNjPv7-FoD&index=4", "https://www.youtube.com/watch?v=eWw9qNeho5I&list=PLfbkAhEG0y74T2FaqcKpBCpJNjPv7-FoD&index=5", "https://www.youtube.com/watch?v=XrMssQ2JB48&list=PLfbkAhEG0y74T2FaqcKpBCpJNjPv7-FoD&index=6"]
   },
   {
+    "short_name": "rihanna",
+    "full_name": "Rihanna",
+    "song": ["Rihanna - Don't Stop The Music (Whisper Machine Edit)", "Rihanna - We found love (Reeshy Remix)", "Rihanna - Diamonds (Iccarus Remix)"],
+    "url": ["https://www.youtube.com/watch?v=MRopNxKaPs8&list=PLfbkAhEG0y77OWkxmlBi3PLPnkOcKXShH&index=1", "https://www.youtube.com/watch?v=kWttup1xYHc&list=PLfbkAhEG0y77OWkxmlBi3PLPnkOcKXShH&index=2", "https://www.youtube.com/watch?v=HVFGMsYPhKE&list=PLfbkAhEG0y77OWkxmlBi3PLPnkOcKXShH&index=3"]
+  },
+  {
     "short_name": "sean",
     "full_name": "Sean Paul",
     "song": ["She Doesn't Mind (NORTKASH x BROHM & OSIS Remix)", "She Makes Me Go [Official Video]", "Get Busy (Olly Flip)", "Temperature (Cam Clark Bootleg) (bass boosted)", "No Lie"],
@@ -132,10 +169,16 @@
     "url": ["https://www.youtube.com/watch?v=hvynkEbRgDc&list=PLfbkAhEG0y77aDHah4-W_71lRjXmatvFp&index=1", "https://www.youtube.com/watch?v=utiEvVjxbtQ&list=PLfbkAhEG0y77aDHah4-W_71lRjXmatvFp&index=2", "https://www.youtube.com/watch?v=Ep8xwFo4fJ8&list=PLfbkAhEG0y77aDHah4-W_71lRjXmatvFp&index=3", "https://www.youtube.com/watch?v=6tBxCP_ctPY&list=PLfbkAhEG0y77aDHah4-W_71lRjXmatvFp&index=4", "https://www.youtube.com/watch?v=kNjBephFX3A&list=PLfbkAhEG0y77aDHah4-W_71lRjXmatvFp&index=5", "https://www.youtube.com/watch?v=vzW0Dytbs6w&list=PLfbkAhEG0y77aDHah4-W_71lRjXmatvFp&index=6", "https://www.youtube.com/watch?v=3uR9jTdG_Jc&list=PLfbkAhEG0y77aDHah4-W_71lRjXmatvFp&index=7", "https://www.youtube.com/watch?v=gypaGzIEiTE&list=PLfbkAhEG0y77aDHah4-W_71lRjXmatvFp&index=8"]
   },
   {
+    "short_name": "teminite",
+    "full_name": "Teminite",
+    "song": ["Teminite & Panda Eyes - Highscore", "Evilwave & Teminite - Mutant (ft Prey For Me)", "Teminite - Unstoppable", "Teminite - Beastmode"],
+    "url": ["https://www.youtube.com/watch?v=Qg1qZq5yjps&list=PLfbkAhEG0y76vPHugmHjbG2C6qWFunEk_&index=1", "https://www.youtube.com/watch?v=kqWOyfNt5l8&list=PLfbkAhEG0y76vPHugmHjbG2C6qWFunEk_&index=2", "https://www.youtube.com/watch?v=qj5ZahqBfFE&list=PLfbkAhEG0y76vPHugmHjbG2C6qWFunEk_&index=3", "https://www.youtube.com/watch?v=wWN6hZu9jjE&list=PLfbkAhEG0y76vPHugmHjbG2C6qWFunEk_&index=4"]
+  },
+  {
     "short_name": "timmy",
     "full_name": "Timmy Trumpet",
-    "song": ["Narco (Bass Boosted)(HD)", "Fire (PARTY BOUNCE)", "Fire (PartyRockzz Mashup)", "BASS POLIZEI (PSYTRANCE MIX) HD HQ", "Tarantino ft. STARX", "Freaks (Radio Instrumental) [Bass Boosted] HQ (1080p)", "Timeline [EXTENDED HQ]", "Punjabi (Official Audio)", "Deja-Vu (Bass Boosted)(HD)", "Thunder (Official Audio)"],
-    "url": ["https://www.youtube.com/embed/iNErPHLOO94", "https://www.youtube.com/embed/hdu7Ml7uiww", "https://www.youtube.com/embed/b49GB_TSdKk", "https://www.youtube.com/embed/EyIezVbiZ38", "https://www.youtube.com/embed/3uR9jTdG_Jc", "https://www.youtube.com/embed/af4Nra1tdHc", "https://www.youtube.com/embed/RiF7FmczoDU", "https://www.youtube.com/embed/0FRlJkUSKv8", "https://www.youtube.com/embed/DzognkZ7nz4", "https://www.youtube.com/embed/_IRjvHeEc2o"]
+    "song": ["Narco (Bass Boosted)(HD)", "BOUNCE POWER (BOUNCE REMIX)", "Fire (PartyRockzz Mashup)", "Tarantino ft. STARX", "Freaks (Radio Instrumental) [Bass Boosted] HQ (1080p)", "Timeline [EXTENDED HQ]", "Punjabi (Official Audio)", "Deja-Vu (Bass Boosted)(HD)", "Thunder (Official Audio)", "BASS POLIZEI (PSYTRANCE MIX) HD HQ"],
+    "url": ["https://www.youtube.com/watch?v=iNErPHLOO94&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=1", "https://www.youtube.com/watch?v=hdu7Ml7uiww&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=2", "https://www.youtube.com/watch?v=b49GB_TSdKk&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=3", "https://www.youtube.com/watch?v=3uR9jTdG_Jc&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=4", "https://www.youtube.com/watch?v=af4Nra1tdHc&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=5", "https://www.youtube.com/watch?v=RiF7FmczoDU&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=6", "https://www.youtube.com/watch?v=0FRlJkUSKv8&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=7", "https://www.youtube.com/watch?v=DzognkZ7nz4&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=8", "https://www.youtube.com/watch?v=_IRjvHeEc2o&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=9", "https://www.youtube.com/watch?v=EyIezVbiZ38&list=PLfbkAhEG0y76qCz819WcSCNoOUm2xcABj&index=10"]
   },
   {
     "short_name": "tujamo",
