@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This website generate random song for everybody, with the best performers!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Song Generator</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet" />
+
+    <noscript>
+      <style>
+        #base {
+          display: none;
+        }
+        #errorbase {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        #error {
+          font-family: "Courier New", Courier, monospace;
+          font-size: 3vh;
+          display: block;
+          color: red;
+        }
+      </style>
+
+      <div id="errorbase">
+        <p id="error">This page requires JavaScript! To use it, please allow it!</p>
+      </div>
+    </noscript>
+  </head>
+
+  <body>
+    <div id="base">
+      <div id="search-base">
+        <div id="search-box">
+          <h1 id="search">Search</h1>
+          <input type="text" onkeyup="searchPerformer(this.value)" />
+        </div>
+
+        <div id="random-box">
+          <input type="button" value="Get random" id="random" onclick="getRandomPerformer()" />
+        </div>
+      </div>
+
+      <div id="boxes">
+        <div onclick="chooseSong('against', 'Against The Current')" class="box" id="against">
+          <h1>Against The Current</h1>
+          <img src="./avatars/against.jpg" class="avatar" alt="Against The Current" title="Against The Current" />
+        </div>
+
+        <div onclick="chooseSong('alan', 'Alan Walker')" class="box" id="alan">
+          <h1>Alan Walker</h1>
+          <img src="./avatars/alan.jpg" class="avatar" alt="Alan Walker" title="Alan Walker" />
+        </div>
+
+        <div onclick="chooseSong('alexandra', 'Alexandra Stan')" class="box" id="alexandra">
+          <h1>Alexandra Stan</h1>
+          <img src="./avatars/alexandra.jpg" class="avatar" alt="Alexandra Stan" title="Alexandra Stan" />
+        </div>
+
+        <div onclick="chooseSong('armin', 'Armin van Buuren')" class="box" id="armin">
+          <h1>Armin van Buuren</h1>
+          <img src="./avatars/armin.jpg" class="avatar" alt="Armin van Buuren" title="Armin van Buuren" />
+        </div>
+
+        <div onclick="chooseSong('black', 'Black Veil Brides')" class="box" id="black">
+          <h1>Black Veil Brides</h1>
+          <img src="./avatars/black.jpg" class="avatar" alt="Black Veil Brides" title="Black Veil Brides" />
+        </div>
+
+        <div onclick="chooseSong('blasterjaxx', 'Blasterjaxx')" class="box" id="blasterjaxx">
+          <h1>Blasterjaxx</h1>
+          <img src="./avatars/blasterjaxx.jpg" class="avatar" alt="Blasterjaxx" title="Blasterjaxx" />
+        </div>
+
+        <div onclick="chooseSong('bodybangers', 'Bodybangers')" class="box" id="bodybangers">
+          <h1>Bodybangers</h1>
+          <img src="./avatars/bodybangers.jpg" class="avatar" alt="Bodybangers" title="Bodybangers" />
+        </div>
+
+        <div onclick="chooseSong('david', 'David Guetta')" class="box" id="david">
+          <h1>David Guetta</h1>
+          <img src="./avatars/david.jpg" class="avatar" alt="David Guetta" title="David Guetta" />
+        </div>
+
+        <div onclick="chooseSong('deorro', 'Deorro')" class="box" id="deorro">
+          <h1>Deorro</h1>
+          <img src="./avatars/deorro.jpg" class="avatar" alt="Deorro" title="Deorro" />
+        </div>
+
+        <div onclick="chooseSong('dimitri', 'Dimitri Vegas')" class="box" id="dimitri">
+          <h1>Dimitri Vegas</h1>
+          <img src="./avatars/dimitri.jpg" class="avatar" alt="Dimitri Vegas" title="Dimitri Vegas" />
+        </div>
+
+        <div onclick="chooseSong('eminem', 'Eminem')" class="box" id="eminem">
+          <h1>Eminem</h1>
+          <img src="./avatars/eminem.jpg" class="avatar" alt="Eminem" title="Eminem" />
+        </div>
+
+        <div onclick="chooseSong('fit', 'Fit for Rivals')" class="box" id="fit">
+          <h1>Fit for Rivals</h1>
+          <img src="./avatars/fit.jpg" class="avatar" alt="Fit for Rivals" title="Fit for Rivals" />
+        </div>
+
+        <div onclick="chooseSong('headhunterz', 'Headhunterz')" class="box" id="headhunterz">
+          <h1>Headhunterz</h1>
+          <img src="./avatars/headhunterz.jpg" class="avatar" alt="Headhunterz" title="Headhunterz" />
+        </div>
+
+        <div onclick="chooseSong('icon', 'Icon for Hire')" class="box" id="icon">
+          <h1>Icon for Hire</h1>
+          <img src="./avatars/icon.jpg" class="avatar" alt="Icon for Hire" title="Icon for Hire" />
+        </div>
+
+        <div onclick="chooseSong('imagine', 'Imagine Dragons')" class="box" id="imagine">
+          <h1>Imagine Dragons</h1>
+          <img src="./avatars/imagine.jpg" class="avatar" alt="Imagine Dragons" title="Imagine Dragons" />
+        </div>
+
+        <div onclick="chooseSong('inna', 'Inna')" class="box" id="inna">
+          <h1>Inna</h1>
+          <img src="./avatars/inna.jpg" class="avatar" alt="Inna" title="Inna" />
+        </div>
+
+        <div onclick="chooseSong('katy', 'Katy Perry')" class="box" id="katy">
+          <h1>Katy Perry</h1>
+          <img src="./avatars/katy.jpg" class="avatar" alt="Katy Perry" title="Katy Perry" />
+        </div>
+
+        <div onclick="chooseSong('marshmello', 'Marshmello')" class="box" id="marshmello">
+          <h1>Marshmello</h1>
+          <img src="./avatars/marshmello.jpg" class="avatar" alt="Marshmello" title="Marshmello" />
+        </div>
+
+        <div onclick="chooseSong('neffex', 'Neffex')" class="box" id="neffex">
+          <h1>Neffex</h1>
+          <img src="./avatars/neffex.jpg" class="avatar" alt="Neffex" title="Neffex" />
+        </div>
+
+        <div onclick="chooseSong('otilia', 'Otilia')" class="box" id="otilia">
+          <h1>Otilia</h1>
+          <img src="./avatars/otilia.jpg" class="avatar" alt="Otilia" title="Otilia" />
+        </div>
+
+        <div onclick="chooseSong('panda', 'Panda Eyes')" class="box" id="panda">
+          <h1>Panda Eyes</h1>
+          <img src="./avatars/panda.jpg" class="avatar" alt="Panda Eyes" title="Panda Eyes" />
+        </div>
+
+        <div onclick="chooseSong('r3hab', 'R3HAB')" class="box" id="r3hab">
+          <h1>R3HAB</h1>
+          <img src="./avatars/r3hab.jpg" class="avatar" alt="R3HAB" title="R3HAB" />
+        </div>
+
+        <div onclick="chooseSong('sean', 'Sean Paul')" class="box" id="sean">
+          <h1>Sean Paul</h1>
+          <img src="./avatars/sean.jpg" class="avatar" alt="Sean Paul" title="Sean Paul" />
+        </div>
+
+        <div onclick="chooseSong('skrillex', 'Skrillex')" class="box" id="skrillex">
+          <h1>Skrillex</h1>
+          <img src="./avatars/skrillex.jpg" class="avatar" alt="Skrillex" title="Skrillex" />
+        </div>
+
+        <div onclick="chooseSong('steve', 'Steve Aoki')" class="box" id="steve">
+          <h1>Steve Aoki</h1>
+          <img src="./avatars/steve.jpg" class="avatar" alt="Steve Aoki" title="Steve Aoki" />
+        </div>
+
+        <div onclick="chooseSong('timmy', 'Timmy Trumpet')" class="box" id="timmy">
+          <h1>Timmy Trumpet</h1>
+          <img src="./avatars/timmy.jpg" class="avatar" alt="Timmy Trumpet" title="Timmy Trumpet" />
+        </div>
+
+        <div onclick="chooseSong('tujamo', 'Tujamo')" class="box" id="tujamo">
+          <h1>Tujamo</h1>
+          <img src="./avatars/tujamo.jpg" class="avatar" alt="Tujamo" title="Tujamo" />
+        </div>
+
+        <div onclick="chooseSong('violet', 'Violet Orlandi')" class="box" id="violet">
+          <h1>Violet Orlandi</h1>
+          <img src="./avatars/violet.jpg" class="avatar" alt="Violet Orlandi" title="Violet Orlandi" />
+        </div>
+      </div>
+
+      <div id="loading-base">
+        <h1 id="rsg">Random Song Generator</h1>
+        <div id="loading"></div>
+        <h1 id="author">Created by Tóth Milán</h1>
+      </div>
+
+      <div id="songbase">
+        <div id="performerbox">
+          <h1 id="performer"></h1>
+        </div>
+
+        <div id="namebox">
+          <h1 id="songname"></h1>
+        </div>
+
+        <iframe id="video" onmouseenter="playAnimation(true)" onmouseleave="playAnimation(false)" src="https://www.youtube.com/embed/4OuXaOc6S_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div id="enjoybox">
+          <h1 id="enjoy">Enjoy the Song!</h1>
+        </div>
+
+        <div id="next-box">
+          <span class="material-symbols-outlined" id="next"> skip_next </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

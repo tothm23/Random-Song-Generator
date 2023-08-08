@@ -1,0 +1,420 @@
+/**
+ *  @author Tóth Milán
+ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+/*########## ##########  #base ########## ##########*/
+
+#base {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#boxes {
+  position: absolute;
+  top: 10vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 35vh;
+  height: 20vh;
+  min-height: 0;
+
+  margin: 3vh;
+  border: 2px solid aqua;
+  border-radius: 1vh;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s;
+  animation: fade 2s linear;
+  cursor: pointer;
+  text-align: center;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.box > h1 {
+  display: none;
+  animation: fade 0.3s linear;
+}
+
+.box > img {
+  width: 88px;
+  height: 88px;
+}
+
+.box:hover {
+  background-color: aqua;
+  color: black;
+  box-shadow: 0 0 3vh aqua;
+  animation: fade 2s linear;
+}
+
+.box:hover h1 {
+  display: block;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid aqua;
+  display: block;
+  animation: fade 0.3s linear;
+}
+
+.box:hover .avatar {
+  display: none;
+}
+
+/*########## ##########  #search-base ########## ##########*/
+
+#search-base {
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+
+  position: fixed;
+  border-bottom: 2px solid aqua;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#search-box {
+  width: 500px;
+}
+
+#random-box {
+  width: 200px;
+}
+
+#search-box,
+#random-box {
+  position: relative;
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid red;*/
+}
+
+#search,
+#random {
+  color: aqua;
+  font-size: 3vh;
+  text-align: center;
+}
+
+input[type="text"] {
+  border: 0;
+  border-radius: 1vh;
+  outline: none;
+  background-color: aqua;
+  font-size: 2vh;
+  width: 20vh;
+  margin-left: 10vh;
+}
+
+#random {
+  width: 20vh;
+  height: 4vh;
+
+  border: 2px solid aqua;
+  border-radius: 1vh;
+  outline: 0;
+  background-color: black;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: fade 2s linear;
+}
+
+#random:hover {
+  color: black;
+  cursor: pointer;
+  background-color: aqua;
+  box-shadow: 0 0 3vh aqua;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  #search-base {
+    height: 20vh;
+  }
+  #boxes {
+    top: 20vh;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  input[type="text"] {
+    width: 15vh;
+  }
+}
+/*########## ##########  #loading-base ########## ##########*/
+
+#loading-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loading {
+  width: 5vh;
+  height: 5vh;
+
+  border: 1vh solid black;
+  border-radius: 50%;
+  border-top-color: white;
+
+  animation: rotate 1s linear infinite;
+  position: absolute;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#rsg {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 4vh;
+  color: white;
+  text-align: center;
+  animation: up_rsg 1s ease;
+}
+
+#author {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 3vh;
+  color: white;
+  text-align: center;
+  animation: up_author 1.5s ease;
+}
+
+@media screen and (max-width: 704px) {
+  #author {
+    font-size: 2vh;
+    animation: small_author 1.5s ease;
+  }
+
+  #base {
+    background-image: none;
+  }
+
+  @keyframes small_author {
+    from {
+      color: black;
+      opacity: 0;
+      font-size: 0;
+    }
+    to {
+      color: white;
+      opacity: 1;
+      font-size: 2vh;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #rsg {
+    font-size: 3vh;
+    animation: small_rsg 1s ease;
+  }
+
+  @keyframes small_rsg {
+    from {
+      color: black;
+      opacity: 0;
+      font-size: 0;
+    }
+    to {
+      color: white;
+      opacity: 1;
+      font-size: 3vh;
+    }
+  }
+}
+
+@keyframes up_rsg {
+  from {
+    color: black;
+    opacity: 0;
+    font-size: 0;
+  }
+  to {
+    color: white;
+    opacity: 1;
+    font-size: 4vh;
+  }
+}
+
+@keyframes up_author {
+  from {
+    color: black;
+    opacity: 0;
+    font-size: 0;
+  }
+  to {
+    color: white;
+    opacity: 1;
+    font-size: 3vh;
+  }
+}
+
+/*########## ##########  #songbase ########## ##########*/
+
+#songbase {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  animation: fade 2s linear;
+}
+
+#performer {
+  color: aqua;
+  padding-bottom: 3vh;
+  font-size: 6vh;
+  letter-spacing: 2px;
+}
+
+#songname {
+  color: aqua;
+  padding-bottom: 5vh;
+  font-size: 3vh;
+}
+
+#video {
+  width: 560px;
+  height: 315px;
+}
+
+@media screen and (max-width: 560px) {
+  #video {
+    width: 100%;
+  }
+}
+
+#enjoy {
+  color: aqua;
+  padding-top: 5vh;
+  font-size: 5vh;
+}
+
+#performer,
+#songname,
+#enjoy {
+  text-align: center;
+}
+
+/* shadow animation*/
+@keyframes growshadow {
+  0% {
+    text-shadow: 0 0 0 aqua;
+  }
+  50% {
+    text-shadow: 0 0 5vh aqua;
+  }
+  100% {
+    text-shadow: 0 0 0 aqua;
+  }
+}
+/*########## ##########  #next-box ########## ##########*/
+
+#next-box {
+  border: 2px solid aqua;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+#next-box:hover {
+  background-color: aqua;
+  cursor: pointer;
+  animation: growboxshadow 1.5s linear infinite;
+}
+
+#next-box:hover #next {
+  color: black;
+}
+
+#next {
+  color: aqua;
+  font-size: 3vh;
+}
+
+@keyframes growboxshadow {
+  0% {
+    box-shadow: 0 0 0 aqua;
+  }
+  50% {
+    box-shadow: 0 0 5vh aqua;
+  }
+  100% {
+    box-shadow: 0 0 0 aqua;
+  }
+}
