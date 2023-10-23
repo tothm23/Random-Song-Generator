@@ -27,4 +27,29 @@ export class RequestService {
       }
     );
   }
+
+  getRecommendations(
+    limit: number,
+    seed_artists: string,
+    seed_tracks: string
+  ): Observable<any> {
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${localStorage.getItem('access_token')}`,
+    });
+
+    let params = new HttpParams();
+
+    if (seed_tracks === '') {
+      params = params.append('seed_artists', seed_artists);
+    } else {
+      params = params.append('seed_tracks', seed_tracks);
+    }
+
+    params = params.append('limit', limit);
+
+    return this.http.get('https://api.spotify.com/v1/recommendations', {
+      headers: headers,
+      params: params,
+    });
+  }
 }
