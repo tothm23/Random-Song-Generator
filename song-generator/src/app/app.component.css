@@ -4,3 +4,12 @@
   box-sizing: border-box;
   transition: 0.2s;
 }
+
+/* side bar */
+.bg-darkgrey {
+  background-color: #121212;
+}
+
+a:hover {
+  opacity: 1 !important;
+}
