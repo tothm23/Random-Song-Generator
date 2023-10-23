@@ -37,4 +37,15 @@ export class SpotifyService {
 
     return paramsSplitUp;
   };
+
+  getToken(): string {
+    if (window.location.hash) {
+      const { access_token } = this.getParamsFromSpotifyAuth(
+        window.location.hash
+      );
+      return access_token;
+    } else {
+      return '';
+    }
+  }
 }
