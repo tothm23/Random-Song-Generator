@@ -17,4 +17,8 @@ export class SpotifyService {
 
     return url;
   }
+
+  redirectToSpoitfyAuth() {
+    window.location.href = this.setSpoitfyAuthUrl();
+  }
 }
