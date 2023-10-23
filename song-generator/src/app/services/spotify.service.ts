@@ -21,4 +21,20 @@ export class SpotifyService {
   redirectToSpoitfyAuth() {
     window.location.href = this.setSpoitfyAuthUrl();
   }
+
+  getParamsFromSpotifyAuth = (hash: string) => {
+    const stringAfterHashtag = hash.substring(1);
+    const paramsInUrl = stringAfterHashtag.split('&');
+
+    const paramsSplitUp = paramsInUrl.reduce(
+      (accumulater: any, currentValue: any) => {
+        const [key, value] = currentValue.split('=');
+        accumulater[key] = value;
+        return accumulater;
+      },
+      {}
+    );
+
+    return paramsSplitUp;
+  };
 }
