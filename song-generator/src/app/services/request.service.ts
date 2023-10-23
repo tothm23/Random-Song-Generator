@@ -52,4 +52,14 @@ export class RequestService {
       params: params,
     });
   }
+
+  getArtist(artistId: string): Observable<any> {
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${localStorage.getItem('access_token')}`,
+    });
+
+    return this.http.get(`https://api.spotify.com/v1/artists/${artistId}`, {
+      headers: headers,
+    });
+  }
 }
