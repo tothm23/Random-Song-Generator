@@ -48,4 +48,11 @@ export class SpotifyService {
       return '';
     }
   }
+
+  writeTokenToLocalStorage() {
+    if (window.location.hash) {
+      localStorage.clear();
+      localStorage.setItem('access_token', this.getToken());
+    }
+  }
 }
