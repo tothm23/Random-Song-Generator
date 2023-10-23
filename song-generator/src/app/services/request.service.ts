@@ -62,4 +62,19 @@ export class RequestService {
       headers: headers,
     });
   }
+
+  getAllArtists(query: string, limit: number): Observable<any> | any {
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${localStorage.getItem('access_token')}`,
+    });
+
+    if (query !== undefined && limit !== undefined) {
+      return this.http.get(
+        `https://api.spotify.com/v1/search?q=${query}&type=track&limit=${limit}`,
+        {
+          headers,
+        }
+      );
+    }
+  }
 }
