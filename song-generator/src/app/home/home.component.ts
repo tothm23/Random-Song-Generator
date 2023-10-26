@@ -103,4 +103,8 @@ export class HomeComponent implements OnInit {
       }
     );
   }
+
+  getError(): string {
+    return this.errorService.getError();
+  }
 }
