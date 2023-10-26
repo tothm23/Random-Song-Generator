@@ -53,10 +53,9 @@
       *ngIf="!isFetchingTracks"
     >
       <!-- Tracks -->
-      <div
-        class="col"
-        *ngFor="let item of itemsOfRecommendationsBasedOnTracks"
-      ></div>
+      <div class="col" *ngFor="let item of itemsOfRecommendationsBasedOnTracks">
+        <div class="card rounded-4 m-sm-3 m-2"></div>
+      </div>
     </div>
   </div>
 </div>
