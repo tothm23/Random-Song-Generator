@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ErrorService } from '../services/error.service';
 import { SpotifyService } from '../services/spotify.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,6 +10,7 @@ import { SpotifyService } from '../services/spotify.service';
 })
 export class LoginComponent {
   constructor(
+    private router: Router,
     private spotifyService: SpotifyService,
     private errorService: ErrorService
   ) {}
@@ -19,6 +21,13 @@ export class LoginComponent {
       this.spotifyService.redirectToSpoitfyAuth();
     } else {
       this.errorService.setError('No internet connection.');
+    }
+  }
+
+  onBack() {
+    if (navigator.onLine) {
+      this.spotifyService.writeTokenToLocalStorage();
+      this.router.navigate(['home']);
     }
   }
 }
