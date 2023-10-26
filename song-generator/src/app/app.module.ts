@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
 import { ColorPopularityPipe } from './pipes/color-popularity.pipe';
+import { DisplayDurationPipe } from './pipes/display-duration.pipe';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ErrorComponent, ColorPopularityPipe],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, ColorPopularityPipe, DisplayDurationPipe],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
