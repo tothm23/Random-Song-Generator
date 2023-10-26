@@ -6,9 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
+import { ColorPopularityPipe } from './pipes/color-popularity.pipe';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ErrorComponent],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, ColorPopularityPipe],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
