@@ -12,4 +12,8 @@ export class ErrorComponent {
   onClose() {
     this.errorService.setError('');
   }
+
+  getError(): string {
+    return this.errorService.getError();
+  }
 }
