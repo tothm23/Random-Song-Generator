@@ -17,9 +17,8 @@
     *ngIf="!isFetchingRecommendedArtists"
   >
     <!-- artists -->
-    <div
-      class="col"
-      *ngFor="let item of itemsOfRecommendationsBasedOnArtists"
-    ></div>
+    <div class="col" *ngFor="let item of itemsOfRecommendationsBasedOnArtists">
+      <div class="card rounded-4 m-sm-3 m-2"></div>
+    </div>
   </div>
 </div>
