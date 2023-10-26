@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ErrorService } from '../services/error.service';
 import { RequestService } from '../services/request.service';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,10 @@ export class HomeComponent implements OnInit {
   seed_tracks!: string;
 
   isFetchingRecommendedArtists!: boolean;
+  isFetchingTracks!: boolean;
+
+  itemsOfRecommendationsBasedOnArtists!: any;
+  itemsOfRecommendationsBasedOnTracks!: any;
 
   constructor(
     private requestService: RequestService,
@@ -23,9 +28,11 @@ export class HomeComponent implements OnInit {
     this.seed_tracks = '';
 
     this.isFetchingRecommendedArtists = false;
+    this.isFetchingTracks = false;
 
     if (navigator.onLine) {
       await this.subscribePlaylistsItemsSync();
+      this.subscribeRecommendations();
     } else {
       this.errorService.setError('No internet connection.');
     }
@@ -70,5 +77,30 @@ export class HomeComponent implements OnInit {
     // Separating with a comma and deleting the last comma
     this.seed_artists = artistsLimited.join(',');
     this.seed_tracks = tracks.join(',');
+  }
+
+  subscribeRecommendations() {
+    this.isFetchingRecommendedArtists = true;
+    this.isFetchingTracks = true;
+
+    this.requestService.getRecommendations(5, this.seed_artists, '').subscribe(
+      (data) => {
+        this.isFetchingRecommendedArtists = false;
+        this.itemsOfRecommendationsBasedOnArtists = data.tracks;
+      },
+      (error: HttpErrorResponse) => {
+        this.errorService.handleError(error);
+      }
+    );
+
+    this.requestService.getRecommendations(5, '', this.seed_tracks).subscribe(
+      (data) => {
+        this.isFetchingTracks = false;
+        this.itemsOfRecommendationsBasedOnTracks = data.tracks;
+      },
+      (error: HttpErrorResponse) => {
+        this.errorService.handleError(error);
+      }
+    );
   }
 }
