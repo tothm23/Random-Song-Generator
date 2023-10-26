@@ -38,4 +38,8 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['home']);
     }
   }
+
+  getError(): string {
+    return this.errorService.getError();
+  }
 }
