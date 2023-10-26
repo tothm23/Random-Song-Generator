@@ -10,9 +10,10 @@ import { ColorPopularityPipe } from './pipes/color-popularity.pipe';
 import { DisplayDurationPipe } from './pipes/display-duration.pipe';
 import { Division3Pipe } from './pipes/division3.pipe';
 import { RoundHourPipe } from './pipes/round-hour.pipe';
+import { RoundMinutePipe } from './pipes/round-minute.pipe';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ErrorComponent, ColorPopularityPipe, DisplayDurationPipe, Division3Pipe, RoundHourPipe],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, ColorPopularityPipe, DisplayDurationPipe, Division3Pipe, RoundHourPipe, RoundMinutePipe],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
