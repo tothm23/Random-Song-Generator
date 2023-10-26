@@ -1,0 +1,11 @@
+* {
+  transition: 0.2s;
+}
+
+button {
+  background-color: #1ed760 !important;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
