@@ -24,6 +24,12 @@
           class="rounded-4 w-100"
           alt="..."
         />
+        <div class="card-img-overlay">
+          <h5 class="card-title text-white p-3">
+            {{ item.name }} - {{ item.album.release_date | date : "y" }}
+          </h5>
+          <p class="card-text"></p>
+        </div>
       </div>
     </div>
   </div>
