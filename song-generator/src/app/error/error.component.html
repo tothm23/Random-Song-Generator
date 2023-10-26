@@ -11,6 +11,12 @@
   <!-- triangle-exclamation icon  -->
   <span class="fa-solid fa-triangle-exclamation fs-3"></span>
 
-  <!-- error -->
+  <!-- error text -->
   <span class="text-black px-3">{{ getError() }}</span>
+
+  <!-- close button -->
+  <button
+    class="btn-close position-absolute top-0 end-0 m-3"
+    (click)="onClose()"
+  ></button>
 </div>
