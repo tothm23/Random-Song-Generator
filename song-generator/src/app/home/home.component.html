@@ -15,5 +15,11 @@
   <div
     class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4 ps-2 pt-2"
     *ngIf="!isFetchingRecommendedArtists"
-  ></div>
+  >
+    <!-- artists -->
+    <div
+      class="col"
+      *ngFor="let item of itemsOfRecommendationsBasedOnArtists"
+    ></div>
+  </div>
 </div>
