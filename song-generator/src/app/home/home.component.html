@@ -11,12 +11,12 @@
     <div class="spinner-border p-3" *ngIf="isFetchingRecommendedArtists"></div>
   </div>
 
-  <!-- recommended artists box -->
+  <!-- Recommended artists box -->
   <div
     class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4 ps-2 pt-2"
     *ngIf="!isFetchingRecommendedArtists"
   >
-    <!-- artists -->
+    <!-- Artists -->
     <div class="col" *ngFor="let item of itemsOfRecommendationsBasedOnArtists">
       <div class="card rounded-4 m-sm-3 m-2">
         <a [href]="item.external_urls.spotify" target="_blank">
@@ -46,5 +46,11 @@
     <div class="row d-flex justify-content-center align-items-center">
       <div class="spinner-border p-3" *ngIf="isFetchingTracks"></div>
     </div>
+
+    <!-- Recommended tracks box -->
+    <div
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4 ps-2 pt-2"
+      *ngIf="!isFetchingTracks"
+    ></div>
   </div>
 </div>
