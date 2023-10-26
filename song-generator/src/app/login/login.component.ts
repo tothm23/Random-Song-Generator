@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ErrorService } from '../services/error.service';
 import { SpotifyService } from '../services/spotify.service';
 import { Router } from '@angular/router';
@@ -8,7 +8,13 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
+  logged!: boolean;
+
+  ngOnInit() {
+    this.logged = false;
+  }
+
   constructor(
     private router: Router,
     private spotifyService: SpotifyService,
@@ -17,9 +23,11 @@ export class LoginComponent {
 
   onLogin() {
     if (navigator.onLine) {
+      this.logged = true;
       this.spotifyService.setSpoitfyAuthUrl();
       this.spotifyService.redirectToSpoitfyAuth();
     } else {
+      this.logged = false;
       this.errorService.setError('No internet connection.');
     }
   }

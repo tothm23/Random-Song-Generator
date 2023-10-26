@@ -3,6 +3,12 @@
 >
   <h1 class="display-3">Login to Music Player</h1>
 
+  <!-- loading spinner -->
+  <div
+    [ngClass]="logged ? 'opacity-100' : 'opacity-0'"
+    class="spinner-border text-white my-5"
+  ></div>
+
   <!-- login and back button box -->
   <div
     class="d-flex justify-content-center align-items-center flex-wrap flex-column flex-sm-row"
