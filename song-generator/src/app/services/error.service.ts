@@ -9,4 +9,8 @@ export class ErrorService {
   getError() {
     return this.error;
   }
+
+  setError(error: string) {
+    this.error = error;
+  }
 }
