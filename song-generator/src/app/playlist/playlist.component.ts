@@ -27,4 +27,15 @@ export class PlaylistComponent {
     private requestService: RequestService,
     private errorService: ErrorService
   ) {}
+
+  ngOnInit() {
+    this.searchedSong = '';
+    this.isPlaying = false;
+    this.isSelected = false;
+    this.isFetching = false;
+    this.songs = [];
+    this.selectedItem = null;
+    this.currentTime = new Subject();
+    this.playlistItemsOffset = 0;
+  }
 }
