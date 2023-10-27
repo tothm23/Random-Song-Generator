@@ -100,11 +100,28 @@ export class PlaylistComponent {
 
             this.player.nativeElement.src = data.items[index].track.preview_url;
             this.player.nativeElement.load();
+            this.play();
           }
         },
         (error: any) => {
           this.errorService.handleError(error);
         }
       );
+  }
+
+  play() {
+    // If the play() isn't undefined or null
+    if (this.player.nativeElement.play()) {
+      this.player.nativeElement
+        .play()
+        .then()
+        .catch((error: any) => {
+          console.error(`Song isn't playing. ${error}`);
+        });
+    } else {
+      console.log(
+        `The value of this.player.nativeElement.play() is ${this.player.nativeElement.play()}`
+      );
+    }
   }
 }
