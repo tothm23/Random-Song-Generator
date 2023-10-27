@@ -13,10 +13,22 @@ import { RoundHourPipe } from './pipes/round-hour.pipe';
 import { RoundMinutePipe } from './pipes/round-minute.pipe';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ErrorComponent, ColorPopularityPipe, DisplayDurationPipe, Division3Pipe, RoundHourPipe, RoundMinutePipe, HomeComponent, SearchComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    ErrorComponent,
+    ColorPopularityPipe,
+    DisplayDurationPipe,
+    Division3Pipe,
+    RoundHourPipe,
+    RoundMinutePipe,
+    HomeComponent,
+    SearchComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
