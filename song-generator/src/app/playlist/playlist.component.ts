@@ -81,4 +81,30 @@ export class PlaylistComponent {
       }
     );
   }
+
+  initSong(index: number, item: any) {
+    // Takes we back to the top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    this.requestService
+      .getPlaylistsItems(this.playlistItemsOffset, 100)
+      .subscribe(
+        (data: any) => {
+          // If track doesn't has preview
+          if (data.items[index].track.preview_url === null) {
+            this.errorService.setError("The track doesn't has preview!");
+          } else {
+            this.isSelected = true;
+            this.isPlaying = true;
+            this.selectedItem = item;
+
+            this.player.nativeElement.src = data.items[index].track.preview_url;
+            this.player.nativeElement.load();
+          }
+        },
+        (error: any) => {
+          this.errorService.handleError(error);
+        }
+      );
+  }
 }
