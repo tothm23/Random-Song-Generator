@@ -21,5 +21,9 @@
   <div
     *ngIf="data && query"
     class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 m-3"
-  ></div>
+  >
+    <div *ngFor="let item of data.tracks.items" class="col">
+      <div class="card p-0 rounded-4 text-white"></div>
+    </div>
+  </div>
 </div>
