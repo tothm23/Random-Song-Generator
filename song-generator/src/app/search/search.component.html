@@ -23,7 +23,15 @@
     class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 m-3"
   >
     <div *ngFor="let item of data.tracks.items" class="col">
-      <div class="card p-0 rounded-4 text-white"></div>
+      <div class="card p-0 rounded-4 text-white">
+        <div class="row">
+          <!-- image -->
+          <img
+            src="{{ item.album.images[1].url }}"
+            class="img-fluid col-12 col-sm-5"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
