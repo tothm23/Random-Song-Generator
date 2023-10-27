@@ -140,4 +140,19 @@ export class PlaylistComponent {
       );
     }
   }
+
+  onPlayOrPause() {
+    if (this.isPlaying) {
+      this.isPlaying = false;
+      this.pause();
+    } else {
+      if (this.player.nativeElement.src === 'http://localhost:4200/') {
+        this.isPlaying = false;
+        this.errorService.setError('Choose a song!');
+      } else {
+        this.isPlaying = true;
+        this.play();
+      }
+    }
+  }
 }
