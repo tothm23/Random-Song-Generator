@@ -44,6 +44,11 @@
               >
                 {{ artist.name }}{{ !lastArtist ? ", " : "" }}
               </span>
+
+              <!-- release -->
+              <p class="card-text">
+                <small>{{ item.album.release_date | date : "y" }}</small>
+              </p>
             </div>
           </div>
         </div>
