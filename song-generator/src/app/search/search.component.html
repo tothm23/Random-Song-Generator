@@ -36,6 +36,14 @@
             <div class="card-body">
               <!-- song name -->
               <h3 class="card-title">{{ item.name }}</h3>
+
+              <!-- artists -->
+              <span
+                *ngFor="let artist of item.album.artists; let lastArtist = last"
+                class="card-title"
+              >
+                {{ artist.name }}{{ !lastArtist ? ", " : "" }}
+              </span>
             </div>
           </div>
         </div>
