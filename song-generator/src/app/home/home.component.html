@@ -1,22 +1,22 @@
 <h1 class="ps-4 py-4 display-1">{{ getGreeting() }}</h1>
 
-<!-- Recommendations - artists -->
+<!-- recommendations - artists -->
 <div class="container-fluid">
   <h2 class="ps-4 pt-2 fs-3 text-white">
     Recommended for you - based on the artists
   </h2>
 
-  <!-- Loading spinner -->
+  <!-- loading spinner -->
   <div class="row d-flex justify-content-center align-items-center">
     <div class="spinner-border p-3" *ngIf="isFetchingRecommendedArtists"></div>
   </div>
 
-  <!-- Recommended artists box -->
+  <!-- recommended artists box -->
   <div
     class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4 ps-2 pt-2"
     *ngIf="!isFetchingRecommendedArtists"
   >
-    <!-- Artists -->
+    <!-- artists -->
     <div class="col" *ngFor="let item of itemsOfRecommendationsBasedOnArtists">
       <div class="card rounded-4 m-sm-3 m-2">
         <a [href]="item.external_urls.spotify" target="_blank">
@@ -36,23 +36,23 @@
     </div>
   </div>
 
-  <!-- Recommendations - tracks -->
+  <!-- recommendations - tracks -->
   <div class="container-fluid">
     <h2 class="ps-4 pt-2 fs-3 text-white">
       Recommended for you - based on the tracks
     </h2>
 
-    <!-- Loading spinner -->
+    <!-- loading spinner -->
     <div class="row d-flex justify-content-center align-items-center">
       <div class="spinner-border p-3" *ngIf="isFetchingTracks"></div>
     </div>
 
-    <!-- Recommended tracks box -->
+    <!-- recommended tracks box -->
     <div
       class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4 ps-2 pt-2"
       *ngIf="!isFetchingTracks"
     >
-      <!-- Tracks -->
+      <!-- tracks -->
       <div class="col" *ngFor="let item of itemsOfRecommendationsBasedOnTracks">
         <div class="card rounded-4 m-sm-3 m-2">
           <a [href]="item.external_urls.spotify" target="_blank">
@@ -73,5 +73,5 @@
   </div>
 </div>
 
-<!-- Error popup -->
+<!-- error popup -->
 <app-error *ngIf="getError()"></app-error>
