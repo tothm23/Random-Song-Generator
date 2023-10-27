@@ -124,4 +124,20 @@ export class PlaylistComponent {
       );
     }
   }
+
+  pause() {
+    // If the pause() isn't undefined or null
+    if (this.player.nativeElement.pause()) {
+      this.player.nativeElement
+        .pause()
+        .then()
+        .catch((error: any) => {
+          console.error(`Song isn't paused. ${error}`);
+        });
+    } else {
+      console.log(
+        `The value of this.player.nativeElement.pause() is ${this.player.nativeElement.pause()}`
+      );
+    }
+  }
 }
