@@ -155,4 +155,15 @@ export class PlaylistComponent {
       }
     }
   }
+
+  onTimeUpdate() {
+    this.currentTime.next(this.player.nativeElement.currentTime);
+
+    // If the song is ended
+    this.currentTime.subscribe((time) => {
+      if (time >= this.player.nativeElement.duration) {
+        this.isPlaying = false;
+      }
+    });
+  }
 }
