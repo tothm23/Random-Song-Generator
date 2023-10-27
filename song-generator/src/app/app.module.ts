@@ -14,6 +14,7 @@ import { RoundMinutePipe } from './pipes/round-minute.pipe';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
+import { PlaylistComponent } from './playlist/playlist.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FormsModule } from '@angular/forms';
     RoundMinutePipe,
     HomeComponent,
     SearchComponent,
+    PlaylistComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
