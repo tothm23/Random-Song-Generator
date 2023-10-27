@@ -25,4 +25,8 @@ export class SearchComponent {
         this.errorService.handleError(error);
       };
   }
+
+  getError(): string {
+    return this.errorService.getError();
+  }
 }
