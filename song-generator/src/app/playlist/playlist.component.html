@@ -133,5 +133,12 @@
     class="row mb-3 px-3 bg-grey"
     *ngFor="let song of songs; let i = index"
     (click)="initSong(i, song)"
-  ></div>
+  >
+    <!-- index box -->
+    <div
+      *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
+      class="d-none d-sm-flex col-sm-1 justify-content-center align-items-center"
+      [class.selected]="selectedItem === song"
+    ></div>
+  </div>
 </div>
