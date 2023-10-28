@@ -188,74 +188,74 @@
           <ng-container *ngIf="i < song.artistsIds.length - 1">, </ng-container>
         </a>
       </div>
+    </div>
 
-      <!-- popularity box -->
-      <div
-        *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
-        class="d-none d-lg-flex col-lg-1 d-flex justify-content-center align-items-center"
-      >
-        <!-- progress bar -->
-        <div class="progress bg-white" style="width: 5vh">
-          <div
-            class="progress-bar"
-            role="progressbar"
-            [style.width.%]="song.popularity"
-            [style.backgroundColor]="song.popularity | colorPopularity"
-            aria-valuenow="10"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            {{ song.popularity }} %
-          </div>
+    <!-- popularity box -->
+    <div
+      *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
+      class="d-none d-lg-flex col-lg-1 d-flex justify-content-center align-items-center"
+    >
+      <!-- progress bar -->
+      <div class="progress bg-white" style="width: 5vh">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          [style.width.%]="song.popularity"
+          [style.backgroundColor]="song.popularity | colorPopularity"
+          aria-valuenow="10"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          {{ song.popularity }} %
         </div>
       </div>
+    </div>
 
-      <!-- preview box -->
-      <div
-        *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
-        class="col-2 col-lg-1 d-flex justify-content-center align-items-center"
-      >
-        <!-- preview icon -->
-        <span
-          [ngClass]="song.hasPreview ? 'fa-check' : 'fa-xmark'"
-          class="fas"
-        ></span>
-      </div>
+    <!-- preview box -->
+    <div
+      *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
+      class="col-2 col-lg-1 d-flex justify-content-center align-items-center"
+    >
+      <!-- preview icon -->
+      <span
+        [ngClass]="song.hasPreview ? 'fa-check' : 'fa-xmark'"
+        class="fas"
+      ></span>
+    </div>
 
-      <!-- duration box -->
-      <div
-        *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
-        class="col-2 col-lg-1 d-flex justify-content-center align-items-center"
-      >
-        {{ song.duration | displayDuration }}
-      </div>
-
-      <!-- pagination -->
-      <nav *ngIf="!isFetching">
-        <ul class="pt-3 pagination justify-content-center">
-          <li class="page-item">
-            <a
-              class="page-link fw-bold border-0"
-              (click)="subscribePlaylistItems(0)"
-              >1
-            </a>
-          </li>
-          <li class="page-item px-2">
-            <a
-              class="page-link fw-bold border-0"
-              (click)="subscribePlaylistItems(100)"
-              >2
-            </a>
-          </li>
-          <li class="page-item">
-            <a
-              class="page-link fw-bold border-0"
-              (click)="subscribePlaylistItems(200)"
-              >3
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <!-- duration box -->
+    <div
+      *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
+      class="col-2 col-lg-1 d-flex justify-content-center align-items-center"
+    >
+      {{ song.duration | displayDuration }}
     </div>
   </div>
+
+  <!-- pagination -->
+  <nav *ngIf="!isFetching">
+    <ul class="pt-3 pagination justify-content-center">
+      <li class="page-item">
+        <a
+          class="page-link fw-bold border-0"
+          (click)="subscribePlaylistItems(0)"
+          >1
+        </a>
+      </li>
+      <li class="page-item px-2">
+        <a
+          class="page-link fw-bold border-0"
+          (click)="subscribePlaylistItems(100)"
+          >2
+        </a>
+      </li>
+      <li class="page-item">
+        <a
+          class="page-link fw-bold border-0"
+          (click)="subscribePlaylistItems(200)"
+          >3
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>
