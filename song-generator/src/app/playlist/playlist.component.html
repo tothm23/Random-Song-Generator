@@ -221,6 +221,14 @@
           class="fas"
         ></span>
       </div>
+
+      <!-- duration box -->
+      <div
+        *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
+        class="col-2 col-lg-1 d-flex justify-content-center align-items-center"
+      >
+        {{ song.duration | displayDuration }}
+      </div>
     </div>
   </div>
 </div>
