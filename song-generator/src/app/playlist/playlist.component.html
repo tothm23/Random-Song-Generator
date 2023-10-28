@@ -16,7 +16,19 @@
       <h1 class="display-3">{{ selectedItem.name }}</h1>
 
       <!-- artists, fa-circle icon, release, duration paragraph -->
-      <p class="d-flex align-items-center justify-content-start"></p>
+      <p class="d-flex align-items-center justify-content-start">
+        <!-- artists -->
+        <a
+          *ngFor="let artistsId of selectedItem.artistsIds; let i = index"
+          href="https://open.spotify.com/artist/{{ artistsId }}"
+          target="_blank"
+          class="text-white text-decoration-none"
+          ><span class="fw-bold">{{ selectedItem.artistsNames[i] }}</span>
+          <ng-container *ngIf="i < selectedItem.artistsIds.length - 1"
+            >,
+          </ng-container>
+        </a>
+      </p>
     </div>
   </div>
 </div>
