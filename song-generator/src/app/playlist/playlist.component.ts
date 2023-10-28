@@ -166,4 +166,8 @@ export class PlaylistComponent {
       }
     });
   }
+
+  getError(): string {
+    return this.errorService.getError();
+  }
 }
