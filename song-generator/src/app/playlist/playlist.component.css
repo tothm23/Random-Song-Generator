@@ -46,3 +46,20 @@ input:focus {
 .fa-xmark {
   color: red;
 }
+
+/* playlist with songs */
+.bg-grey:hover {
+  background-color: #2d2d30;
+  cursor: pointer;
+}
+
+.page-link {
+  background-color: #1ed760;
+  color: #2d2d30;
+}
+
+.page-link:hover {
+  text-decoration: none !important;
+  cursor: pointer;
+  transform: scale(1.1);
+}
