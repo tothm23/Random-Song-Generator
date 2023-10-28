@@ -165,6 +165,17 @@
     <div
       *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
       class="col-8 col-sm-7 col-md-5 col-lg-7 d-flex justify-content-center flex-column"
-    ></div>
+    >
+      <!-- song name -->
+      <div>
+        <a
+          class="text-decoration-none text-white"
+          [class.selected]="selectedItem === song"
+          href="https://open.spotify.com/track/{{ song.trackId }}"
+          target="_blank"
+          >{{ song.name }}</a
+        >
+      </div>
+    </div>
   </div>
 </div>
