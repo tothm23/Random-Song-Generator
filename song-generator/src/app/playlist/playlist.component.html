@@ -188,6 +188,12 @@
           <ng-container *ngIf="i < song.artistsIds.length - 1">, </ng-container>
         </a>
       </div>
+
+      <!-- popularity box -->
+      <div
+        *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
+        class="d-none d-lg-flex col-lg-1 d-flex justify-content-center align-items-center"
+      ></div>
     </div>
   </div>
 </div>
