@@ -176,6 +176,18 @@
           >{{ song.name }}</a
         >
       </div>
+
+      <!-- artists -->
+      <div>
+        <a
+          *ngFor="let artistsId of song.artistsIds; let i = index"
+          href="https://open.spotify.com/artist/{{ artistsId }}"
+          target="_blank"
+          class="text-decoration-none text-white opacity-75"
+          >{{ song.artistsNames[i] }}
+          <ng-container *ngIf="i < song.artistsIds.length - 1">, </ng-container>
+        </a>
+      </div>
     </div>
   </div>
 </div>
