@@ -229,6 +229,11 @@
       >
         {{ song.duration | displayDuration }}
       </div>
+
+      <!-- pagination -->
+      <nav *ngIf="!isFetching">
+        <ul class="pt-3 pagination justify-content-center"></ul>
+      </nav>
     </div>
   </div>
 </div>
