@@ -24,3 +24,16 @@ button:hover {
 .selected {
   color: #1ed760 !important;
 }
+
+/* search bar */
+.fa-magnifying-glass {
+  background-color: #2d2d30;
+}
+
+input {
+  background-color: #2d2d30;
+}
+
+input:focus {
+  background-color: #2d2d30;
+}
