@@ -160,5 +160,11 @@
       <!-- image -->
       <img src="{{ song.image }}" />
     </div>
+
+    <!-- song name and artists box -->
+    <div
+      *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
+      class="col-8 col-sm-7 col-md-5 col-lg-7 d-flex justify-content-center flex-column"
+    ></div>
   </div>
 </div>
