@@ -139,6 +139,9 @@
       *ngIf="song.name.toLowerCase().includes(searchedSong.toLowerCase())"
       class="d-none d-sm-flex col-sm-1 justify-content-center align-items-center"
       [class.selected]="selectedItem === song"
-    ></div>
+    >
+      <!-- index -->
+      <span *ngIf="selectedItem !== song || !isPlaying">{{ song.index }}</span>
+    </div>
   </div>
 </div>
