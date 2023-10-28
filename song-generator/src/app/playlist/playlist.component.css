@@ -37,3 +37,12 @@ input {
 input:focus {
   background-color: #2d2d30;
 }
+
+/* preview */
+.fa-check {
+  color: #1ed760;
+}
+
+.fa-xmark {
+  color: red;
+}
