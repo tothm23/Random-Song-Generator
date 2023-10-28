@@ -36,6 +36,10 @@
         <span [title]="selectedItem.release | date : 'fullDate'">
           {{ selectedItem.release | date : "y" }}</span
         >
+
+        <!-- duration -->
+        <span class="fa-solid fa-circle px-2"></span>
+        {{ selectedItem.duration | displayDuration }}
       </p>
     </div>
   </div>
