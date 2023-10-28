@@ -62,18 +62,20 @@
     </div>
 
     <!-- search bar box -->
-    <div class="col d-flex align-items-center input-group flex-nowrap">
-      <!-- magnifying-glass icon -->
-      <span
-        class="d-flex justify-content-center align-items-center fa-solid fa-magnifying-glass rounded-start-5 p-2 ps-3"
-      ></span>
+    <div class="col d-flex align-items-center">
+      <div class="input-group flex-nowrap">
+        <!-- magnifying-glass icon -->
+        <span
+          class="d-flex justify-content-center align-items-center fa-solid fa-magnifying-glass rounded-start-5 p-2 ps-3"
+        ></span>
 
-      <!-- search bar -->
-      <input
-        [(ngModel)]="searchedSong"
-        type="text"
-        class="form-control shadow-none border-0 rounded-end-5 text-white p-2"
-      />
+        <!-- search bar -->
+        <input
+          [(ngModel)]="searchedSong"
+          type="text"
+          class="form-control shadow-none border-0 rounded-end-5 text-white p-2"
+        />
+      </div>
     </div>
   </div>
 </div>
