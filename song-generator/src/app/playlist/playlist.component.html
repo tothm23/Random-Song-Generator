@@ -127,4 +127,11 @@
   >
     <div class="spinner-border p-3"></div>
   </div>
+
+  <!-- playlist with songs -->
+  <div
+    class="row mb-3 px-3 bg-grey"
+    *ngFor="let song of songs; let i = index"
+    (click)="initSong(i, song)"
+  ></div>
 </div>
