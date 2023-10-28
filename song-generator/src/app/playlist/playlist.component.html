@@ -232,7 +232,29 @@
 
       <!-- pagination -->
       <nav *ngIf="!isFetching">
-        <ul class="pt-3 pagination justify-content-center"></ul>
+        <ul class="pt-3 pagination justify-content-center">
+          <li class="page-item">
+            <a
+              class="page-link fw-bold border-0"
+              (click)="subscribePlaylistItems(0)"
+              >1
+            </a>
+          </li>
+          <li class="page-item px-2">
+            <a
+              class="page-link fw-bold border-0"
+              (click)="subscribePlaylistItems(100)"
+              >2
+            </a>
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link fw-bold border-0"
+              (click)="subscribePlaylistItems(200)"
+              >3
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </div>
