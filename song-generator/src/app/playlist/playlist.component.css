@@ -5,3 +5,13 @@
 a:hover {
   text-decoration: underline !important;
 }
+
+/* controls */
+button {
+  background-color: #1ed760;
+}
+
+button:hover {
+  background-color: #1ed760;
+  transform: scale(1.1);
+}
