@@ -47,6 +47,18 @@
   <!-- controls -->
   <div class="row">
     <!-- play/pause button box -->
-    <div class="col-auto"></div>
+    <div class="col-auto">
+      <!-- play/pause button -->
+      <button
+        type="button"
+        class="btn btn-success m-4 p-4 text-black rounded-circle position-relative"
+        (click)="onPlayOrPause()"
+      >
+        <span
+          [ngClass]="!isPlaying ? 'fa-play' : 'fa-pause'"
+          class="p-2 text-center fas fs-5 position-absolute top-50 start-50 translate-middle"
+        ></span>
+      </button>
+    </div>
   </div>
 </div>
