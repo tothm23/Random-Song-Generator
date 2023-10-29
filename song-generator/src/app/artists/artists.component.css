@@ -1,0 +1,10 @@
+* {
+  transition: 0.2s;
+}
+
+/* search bar */
+.fa-magnifying-glass,
+input,
+input:focus {
+  background-color: #2d2d30;
+}
