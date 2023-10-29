@@ -6,7 +6,8 @@ import { Injectable } from '@angular/core';
 export class SpotifyService {
   setSpoitfyAuthUrl() {
     const CLIENT_ID = '7fc647f778484fde834d07bda543b59e';
-    const REDIRECT_URI = 'http://localhost:4200/login';
+    // const REDIRECT_URI = 'http://localhost:4200/login';
+    const REDIRECT_URI = 'https://song-generator-6c322.web.app/login';
     const SCOPE = 'playlist-read-private';
 
     let url = 'https://accounts.spotify.com/authorize';
