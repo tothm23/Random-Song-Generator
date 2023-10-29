@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ErrorService } from '../services/error.service';
 import { RequestService } from '../services/request.service';
+import { Artist } from '../models/artist';
 
 @Component({
   selector: 'app-artists',
@@ -10,6 +11,7 @@ import { RequestService } from '../services/request.service';
 export class ArtistsComponent implements OnInit {
   artistIds!: string[];
 
+  artists!: Artist[];
   searchedItem!: string;
   isFetchingArtists!: boolean;
 
@@ -21,6 +23,7 @@ export class ArtistsComponent implements OnInit {
   async ngOnInit() {
     this.artistIds = [];
 
+    this.artists = [];
     this.searchedItem = '';
     this.isFetchingArtists = false;
 
