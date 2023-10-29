@@ -53,6 +53,21 @@
           <!-- popularity box -->
           <div class="d-flex align-items-center">
             <p class="card-title text-white opacity-75 me-2">Popularity</p>
+
+            <!-- progress bar -->
+            <div class="progress bg-white" style="width: 5vh">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                [style.width.%]="artist.popularity"
+                [style.backgroundColor]="artist.popularity | colorPopularity"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                {{ artist.popularity }} %
+              </div>
+            </div>
           </div>
         </div>
       </div>
