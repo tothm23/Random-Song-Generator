@@ -8,3 +8,7 @@ input,
 input:focus {
   background-color: #2d2d30;
 }
+
+.card {
+  background-color: #2d2d30;
+}
