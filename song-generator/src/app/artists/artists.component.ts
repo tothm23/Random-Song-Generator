@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistsComponent implements OnInit {
   searchedItem!: string;
+  isFetchingArtists!: boolean;
 
   ngOnInit() {
     this.searchedItem = '';
+    this.isFetchingArtists = false;
   }
 }
