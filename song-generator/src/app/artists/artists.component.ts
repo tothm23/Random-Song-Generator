@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ErrorService } from '../services/error.service';
 import { RequestService } from '../services/request.service';
 import { Artist } from '../models/artist';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-artists',
@@ -29,6 +30,7 @@ export class ArtistsComponent implements OnInit {
 
     if (navigator.onLine) {
       await this.collectArtistIdsSync();
+      this.subscribeArtists();
     } else {
       this.errorService.setError('No internet connection.');
     }
@@ -50,6 +52,37 @@ export class ArtistsComponent implements OnInit {
       }
     } catch (error: any) {
       this.errorService.handleError(error);
+    }
+  }
+
+  subscribeArtists() {
+    this.isFetchingArtists = true;
+
+    for (let i = 0; i < this.artistIds.length; i++) {
+      this.requestService.getArtist(this.artistIds[i]).subscribe(
+        (data) => {
+          this.isFetchingArtists = false;
+
+          let genres = [];
+
+          // Collect genres
+          for (let j = 0; j < data.genres.length; j++) {
+            genres.push(data.genres[j]);
+          }
+
+          this.artists.push({
+            spotifyUrl: data.external_urls.spotify,
+            followers: data.followers.total,
+            genres: genres,
+            imageUrl: data.images[2].url,
+            name: data.name,
+            popularity: data.popularity,
+          });
+        },
+        (error: HttpErrorResponse) => {
+          this.errorService.handleError(error);
+        }
+      );
     }
   }
 }
