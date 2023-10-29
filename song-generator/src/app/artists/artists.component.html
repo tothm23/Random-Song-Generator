@@ -43,6 +43,12 @@
             [href]="artist.spotifyUrl"
             >{{ artist.name }}</a
           >
+
+          <!-- followers -->
+          <p class="card-title text-white opacity-75 pt-1">
+            Followers
+            <span class="fw-bold">{{ artist.followers | division3 }}</span>
+          </p>
         </div>
       </div>
     </div>
