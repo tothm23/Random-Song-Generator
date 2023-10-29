@@ -27,6 +27,11 @@
     *ngIf="!isFetchingArtists"
   >
     <!-- artists -->
-    <div class="col" *ngFor="let artist of artists"></div>
+    <div class="col" *ngFor="let artist of artists">
+      <div
+        *ngIf="artist.name.toLowerCase().includes(searchedItem.toLowerCase())"
+        class="card rounded-4 p-0"
+      ></div>
+    </div>
   </div>
 </div>
