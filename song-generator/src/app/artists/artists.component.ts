@@ -85,4 +85,8 @@ export class ArtistsComponent implements OnInit {
       );
     }
   }
+
+  getError(): string {
+    return this.errorService.getError();
+  }
 }
